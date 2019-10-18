@@ -20,7 +20,6 @@ import * as serviceWorker from './serviceWorker';
 //configure routing
 const routing = (
     <Router>
-        <div>
             <Route path="/" component={App} />
             <Route path="/discover" component={Discover} />
             <Route path="/groups" component={Groups} />
@@ -29,7 +28,6 @@ const routing = (
             <Route path="/myGroups" component={MyGroups} />
             <Route path="/newGroup" component={NewGroup} />
             <Route path="/registration" component={Registration} />
-        </div>
     </Router>
 )
 
