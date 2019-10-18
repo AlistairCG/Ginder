@@ -21,7 +21,7 @@ import * as serviceWorker from './serviceWorker';
 const routing = (
     <Router>
         <div>
-            <Route path="/" component={} />
+            <Route path="/" component={App} />
             <Route path="/discover" component={Discover} />
             <Route path="/groups" component={Groups} />
             <Route path="/homepage" component={Homepage} />
