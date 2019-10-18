@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
+import Logo from "../images/grinder.jpg";
 
 class Header extends React.Component {
   render() {
@@ -8,9 +9,9 @@ class Header extends React.Component {
         <Navbar.Brand href="/homepage">Ginder</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/discover">Discover</Nav.Link>
-            <Nav.Link href="/groups">Groups</Nav.Link>
+          <Nav className="justify-content-end" style={{ width: "100%" }}>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/homepage">Sign out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
