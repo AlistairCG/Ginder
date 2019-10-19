@@ -1,22 +1,31 @@
 import React from 'react';
-import Header from './utils/header';
-import Home from './components/homepage';
-import Logo from "./images/grinder.jpg";
 import './App.css';
+
+//import for react-router-dom
+import { Route, Link, BrowserRouter as Router} from 'react-router-dom'
+
+//importing all components
+import Home from './components/views/home';
+import Discover  from './components/views/discover';
+import Groups  from './components/views/groups';
+import Homepage  from './components/views/userHomePage';
+import Login  from './components/views/login';
+import MyGroups  from './components/views/mygroups';
+import NewGroup  from './components/views/newgroup';
+import Registration  from './components/views/registration';
 
 function App() {
   return (
-    <div>
-      <div className="App">
-        <Header />
-        <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
-          <div>
-            <h1>Where grinders meet</h1>
-            <img src={Logo} />
-          </div>
-        </div>
-      </div>
-    </div>
+    <Router>
+            <Route path="/" component={Home} />
+            <Route path="/discover" component={Discover} />
+            <Route path="/groups" component={Groups} />
+            <Route path="/homepage" component={Homepage} />
+            <Route path="/login" component={Login} />
+            <Route path="/myGroups" component={MyGroups} />
+            <Route path="/newGroup" component={NewGroup} />
+            <Route path="/registration" component={Registration} />
+    </Router>
   );
 }
 
