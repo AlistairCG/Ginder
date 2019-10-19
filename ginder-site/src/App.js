@@ -11,7 +11,7 @@ import Groups  from './components/views/groups.js';
 import Homepage  from './components/views/userHomePage';
 import Login  from './components/views/login';
 import MyGroups  from './components/views/myGroups';
-import NewGroup  from './components/views/newgroup';
+import NewGroup  from './components/views/newGroups';
 import Registration  from './components/views/registration';
 
 function App() {
