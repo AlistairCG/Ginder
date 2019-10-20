@@ -17,7 +17,8 @@ import Registration  from './components/views/registration';
 function App() {
   return (
     <Router>
-            <Route path="/" component={Home} />
+            <Route path="/" component={Discover} />
+            <Route path="/home" component={Home} />
             <Route path="/discover" component={Discover} />
             <Route path="/groups" component={Groups} />
             <Route path="/homepage" component={Homepage} />
