@@ -3,11 +3,12 @@ import GuestHeader from "../utils/header";
 
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 
-import nintendoLogo from "../../images/carousel-nintendo-switch.jpg";
-import pcImage from "../../images/carousel-pc.jpg";
-import computerImage from "../../images/carousel-pc2.jpg"
-import ps4Logo from "../../images/carousel-playstation-logo.jpg"
-import ps4Controller from "../../images/carousel-ps4-controller.jpg"
+import lastOfUs from "../../images/LastOfUs.jpg";
+import doom from "../../images/Doom.jpg";
+import portal from "../../images/portal.jpg";
+import darkSouls from "../../images/darkSouls.jpg";
+import streetFighter from "../../images/streetFighter.jpg";
+import marioKart from "../../images/marioKart.jpg";
 
 
 class Home extends React.Component {
@@ -23,39 +24,48 @@ class Home extends React.Component {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={nintendoLogo}
-                    alt="Nintendo Logo"
+                    src={lastOfUs}
+                    alt="Last of Us"
                   />
                 </Carousel.Item>
+
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={pcImage}
-                    alt="PC Image"
+                    src={doom}
+                    alt="Doom"
                   />
                 </Carousel.Item>
                 
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={computerImage}
-                    alt="Computer Image"
+                    src={portal}
+                    alt="Portal"
                   />
                 </Carousel.Item>
 
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={ps4Logo}
-                    alt="PS4 Logo"
+                    src={darkSouls}
+                    alt="Dark Suls"
                   />
                 </Carousel.Item>
 
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={ps4Controller}
-                    alt="PS4 Controller"
+                    src={streetFighter}
+                    alt="Street Fighter"
+                  />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={marioKart}
+                    alt="Mario Kart"
                   />
                 </Carousel.Item>
 
