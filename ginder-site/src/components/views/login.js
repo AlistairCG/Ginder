@@ -39,7 +39,6 @@ class Login extends React.Component {
 export default Login
 
 const wallPaper = {
-    backgroundImage: 'url(' + require('../../images/androidBackground.png') + ')',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
