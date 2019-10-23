@@ -1,8 +1,15 @@
 import React from 'react'
 
+import Header from '../utils/header'
+
 class UserHomePage extends React.Component{
     render(){
-        return <h1>My roups</h1>
+        return (
+            <div>
+            <Header isGuest="false" />
+            <h1>UserHomePage works</h1>
+            </div>
+        );
     }
 }
 
