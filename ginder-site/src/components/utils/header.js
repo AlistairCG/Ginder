@@ -11,8 +11,7 @@ function Header(props) {
   if(props.isGuest=="true"){  
   return (
       <Navbar bg="dark" variant="dark" className="justify-content-between">
-        <Navbar.Brand style={GinderStyle} href="/">Ginder</Navbar.Brand>
-
+        <Navbar.Brand style={GinderStyle} href="/">Ginder </Navbar.Brand>
         <Form inline>
           <InputGroup>
             <InputGroup.Prepend>
