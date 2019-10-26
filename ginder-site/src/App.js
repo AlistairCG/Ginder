@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 //import for react-router-dom
-import { Route, Link, BrowserRouter as Router} from 'react-router-dom'
+import { Route, BrowserRouter as Router} from 'react-router-dom'
 
 //importing all components
 import Home from './components/views/home';
@@ -17,7 +17,7 @@ import Registration  from './components/views/registration';
 function App() {
   return (
     <Router>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/discover" component={Discover} />
             <Route path="/groups" component={Groups} />
             <Route path="/homepage" component={Homepage} />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
@@ -35,7 +36,7 @@ class Home extends React.Component {
                         </div>
                     </Form>
                     <Row style={footer}>
-                        <a>Don't have an account? Sign up.</a>
+                    <Link to="/registration">Don't have an account? Sign up.</Link>
                     </Row>
                 </div>
             </div>
