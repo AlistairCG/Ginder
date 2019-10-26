@@ -1,70 +1,49 @@
 import React from "react";
-import { Navbar, NavDropdown, Nav, Form, InputGroup, FormControl, Button } from "react-bootstrap";
+import {
+  Navbar,
+  NavDropdown,
+  Nav,
+  Form,
+  InputGroup,
+  FormControl,
+  Button
+} from "react-bootstrap";
 
 const GinderStyle = {
-  paddingLeft: '3%',
+  paddingLeft: "3%",
   fontSize: "200%",
-  fontFamily: "'Montserrat', sans-serif;"
-}
+  fontFamily: "'Montserrat', sans-serif"
+};
+
+const LoginStyle = {
+  paddingRight: "3%"
+};
 
 function Header(props) {
-  if(props.isGuest=="true"){  
-  return (
-      <Navbar bg="dark" variant="dark" className="justify-content-between">
-        <Navbar.Brand style={GinderStyle} href="/">Ginder </Navbar.Brand>
-        <Form inline>
-          <InputGroup>
-            <InputGroup.Prepend>
-              <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl
-              placeholder="Username"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              className="mr-sm-2"
-            />
-          </InputGroup>
-
-          <InputGroup>
-            <InputGroup.Prepend>
-              <InputGroup.Text id="basic-addon1">**</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl
-              placeholder="Password"
-              aria-label="Password"
-              aria-describedby="basic-addon1"
-              className="mr-sm-2"
-            />
-          </InputGroup>
-          
-          <Button variant="success" href="/homepage">Log In</Button>
-        </Form>
-
+  if (props.isGuest == "true") {
+    return (
+      <Navbar expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand style={GinderStyle} href="/">
+          Ginder
+        </Navbar.Brand>
       </Navbar>
-    );
-  }
-  else{
-    return(
-      <Navbar bg="dark" variant="dark" className="justify-content-between">
-      <Navbar.Brand style={GinderStyle} href="/">Ginder</Navbar.Brand>
-
-      <Form inline>
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text id="basic-addon1">&#x1F50E;</InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl
-            placeholder="Search"
-            aria-label="Search"
-            aria-describedby="basic-addon1"
-            className="mr-sm-2"
-          />
-        </InputGroup>
-        
-        <Button variant="secondary" href="/">Log Out</Button>
-      </Form>
-
-    </Navbar>
+    )
+  } else {
+    return (
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand style={GinderStyle} href="/">
+          Ginder
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto"></Nav>
+          <Nav className="text-center" style={LoginStyle}>
+            <Button variant="outline-danger" href="/">
+              Log Out
+            </Button>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     )
   }
 }
