@@ -1,5 +1,4 @@
-import React from 'react'
-import Logo from "../images/grinder.jpg";
+import React from 'react';
 
 class Homepage extends React.Component {
     render(){
