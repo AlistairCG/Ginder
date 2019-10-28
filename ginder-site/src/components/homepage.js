@@ -64,7 +64,6 @@ const cards = [1, 2, 3, 4, 5, 6];
 
 export default function Album() {
   const classes = useStyles();
-
   return (
     <React.Fragment>
       <CssBaseline />
@@ -85,12 +84,12 @@ export default function Album() {
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Ginder
-
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
             Level up your gaming and social experiences 
             </Typography>
             <div className={classes.heroButtons}>
+
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -108,6 +107,9 @@ export default function Album() {
         </div>
         <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
+          <Typography variant="h4" align="center">
+            Hot Ginder Groups in Your Area
+            </Typography> 
           <Grid container spacing={4}>
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
@@ -122,7 +124,7 @@ export default function Album() {
                       An Example Group
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      This is an example group for LEET gamers. Join Us!
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -133,8 +135,8 @@ export default function Album() {
                       Details
                     </Button>
                     <Card>
-                    <Typography>
-                        Interest A | Interest B 
+                    <Typography color="primary">
+                        TableTop | DND
                     </Typography>
                     </Card>
                     <Card>
