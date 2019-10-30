@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-class Discover extends React.Component{
-    render(){
-        return <h1>My Group</h1>
-    }
+function Discover(props) {
+  return (
+  <h1>Discover Component works!</h1>
+  )
 }
 
-export default Discover
+export default Discover;

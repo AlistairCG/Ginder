@@ -13,9 +13,7 @@ import {
 
 import lastOfUs from "../../images/LastOfUs.jpg";
 import doom from "../../images/Doom.jpg";
-import portal from "../../images/portal.jpg";
 import darkSouls from "../../images/darkSouls.jpg";
-import streetFighter from "../../images/streetFighter.jpg";
 import marioKart from "../../images/marioKart.jpg";
 import halo from "../../images/halo.png";
 
@@ -50,25 +48,13 @@ class Home extends React.Component {
                 </Carousel.Item>
 
                 <Carousel.Item>
-                  <img className="d-block w-100" src={portal} alt="Portal" />
-                </Carousel.Item>
-
-                <Carousel.Item>
                   <img
                     className="d-block w-100"
                     src={darkSouls}
                     alt="Dark Suls"
                   />
                 </Carousel.Item>
-
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src={streetFighter}
-                    alt="Street Fighter"
-                  />
-                </Carousel.Item>
-
+                
                 <Carousel.Item>
                   <img
                     className="d-block w-100"

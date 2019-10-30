@@ -1,30 +1,32 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 //import for react-router-dom
-import { Route, Link, BrowserRouter as Router} from 'react-router-dom'
+import { Route, BrowserRouter as Router } from "react-router-dom";
 
-//importing all components
-import Home from './components/views/home';
-import Discover  from './components/views/discover';
-import Groups  from './components/views/groups.js';
-import Homepage  from './components/views/userHomePage';
-import Login  from './components/views/login';
-import MyGroups  from './components/views/myGroups';
-import NewGroup  from './components/views/newGroups';
-import Registration  from './components/views/registration';
+//importing base components
+import Home from "./components/views/home";
+import Homepage from "./components/views/userHomePage";
+
+//importing user components
+import Profile from "./components/views/profile"
+import Discover from "./components/views/discover";
+import Chats from "./components/views/chats"
+import Questionnaire from "./components/views/questionnaire"
+import LinkAccounts from "./components/views/linkAccounts"
+import Settings from "./components/views/settings"
 
 function App() {
   return (
     <Router>
-            <Route exact path="/" component={Home} />
-            <Route path="/discover" component={Discover} />
-            <Route path="/groups" component={Groups} />
-            <Route path="/homepage" component={Homepage} />
-            <Route path="/login" component={Login} />
-            <Route path="/myGroups" component={MyGroups} />
-            <Route path="/newGroup" component={NewGroup} />
-            <Route path="/registration" component={Registration} />
+      <Route exact path="/" component={Home} />
+      <Route path="/homepage" component={Homepage} />
+      <Route path="/profile" component={Profile} />
+      <Route path="/discover" component={Discover} />
+      <Route path="/chats" component={Chats} />
+      <Route path="/questionnaire" component={Questionnaire} />
+      <Route path="/linkAccounts" component={LinkAccounts} />
+      <Route path="/settings" component={Settings} />
     </Router>
   );
 }

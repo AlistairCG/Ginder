@@ -1,11 +1,7 @@
 import React from "react";
 import {
   Navbar,
-  NavDropdown,
   Nav,
-  Form,
-  InputGroup,
-  FormControl,
   Button
 } from "react-bootstrap";
 
@@ -20,7 +16,7 @@ const LoginStyle = {
 };
 
 function Header(props) {
-  if (props.isGuest == "true") {
+  if (props.isGuest === "true") {
     return (
       <Navbar expand="lg" bg="dark" variant="dark">
         <Navbar.Brand style={GinderStyle} href="/">
