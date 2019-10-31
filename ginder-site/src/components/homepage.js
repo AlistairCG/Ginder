@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+       Ginder
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -70,7 +70,23 @@ export default function Album() {
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
-            <Container maxWidth="md">
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              >
+            
+            <Container fixed maxWidth="xs">
+            <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://external-preview.redd.it/7Gp54sFMBojExXGd-JNzPGd0ez__7Qpzb1W1ULc28Xg.png?auto=webp&s=4b6f6998c20aac527b7c457711672bd3c20b8d36"
+                    title="Image title"
+                  />
+                </Card>
+            </Container>  
+            <Container fixed maxWidth="xs">
             <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -78,9 +94,31 @@ export default function Album() {
                     title="Image title"
                   />
                 </Card>
-            </Container>  
+            </Container> 
+            <Container maxWidth="xs">
+            <Card  fixed className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://s3.amazonaws.com/cdn-thumbthrone/wp-content/uploads/2014/04/ArcheAge.jpg"
+                    title="Image title"
+                  />
+                </Card>
+            </Container> 
+          </Grid>
         </div>
         <div className={classes.heroContent}>
+        <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              >
+          <Container maxWidth="xs">
+          <Typography component="h5" variant="h5" align="center" color="textSecondary" gutterBottom>
+           It all started with a dream...
+          </Typography>
+
+          </Container>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Ginder
@@ -89,7 +127,6 @@ export default function Album() {
             Level up your gaming and social experiences 
             </Typography>
             <div className={classes.heroButtons}>
-
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -104,6 +141,17 @@ export default function Album() {
               </Grid>
             </div>
           </Container>
+          <Container maxWidth="xs">
+          <Typography component="h3" variant="h4" align="center" color="textPrimary" gutterBottom>
+            About us
+          </Typography>
+          <Typography component="h5" variant="h5" align="center" color="textSecondary" >
+            We are passionate gamers who want to bring the very best social connections to your gamer life.
+            Founded in 2019 @ Seneca College, we are bringing your future to the present.
+          </Typography>
+
+          </Container>
+        </Grid>
         </div>
         <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
@@ -116,7 +164,7 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="https://picsum.photos/400"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
