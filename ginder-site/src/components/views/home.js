@@ -28,7 +28,7 @@ class Home extends React.Component {
 
                         <div>
                             <Button style={loginButton} variant="primary" type="submit" className="btn">
-                                Sign On
+                            <Link to="/discover"> Sign On </Link>
                                 </Button>
                             <a style={forgotPass}>
                                 Forgot your password?
