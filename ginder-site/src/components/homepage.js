@@ -129,9 +129,11 @@ export default function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
+                <a href="/registration">
                   <Button variant="contained" color="primary">
-                   Sign Up for Ginder
+                  Sign Up for Ginder 
                   </Button>
+                  </a>
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary">
