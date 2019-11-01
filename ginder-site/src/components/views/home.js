@@ -3,27 +3,32 @@ import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
 import Header from '../headers/header';
 import imgtheme from '../../images/gindertheme.png';
-import img from '../../images/ginderhomev4.png';
+import img from '../../images/ginderhomev5.png';
+import { Tween, Timeline, SplitLetters } from 'react-gsap';
 
 class Home extends React.Component {
 
     render() {
         return (
             <div>
-                <Header />
                 <SectionWipesStyled>
                     <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
                         <Scene pin>
                             <div className="panel wallpaper"></div>
                         </Scene>
                         <Scene pin>
-                            <div className="panel wallpapertheme"><span>Panel</span></div>
-                        </Scene>
-                        <Scene pin>
-                            <div className="panel green"><span>Panel</span></div>
-                        </Scene>
-                        <Scene pin>
-                            <div className="panel bordeaux"><span>Panel</span></div>
+                            <div className="panel wallpapertheme">
+                                <img style={{paddingTop: "80px"}} src={require("../../images/whyginder.png")}></img>
+                                <div>
+                                  Have you ever had trouble trying to rise up in the competitive scene, but can't do 
+                                  it solo? Trying to finish in-game events that require you to be in a group, but also
+                                  can't find a group? Ginder allows you to match up with other players that meet your
+                                  requirements so that you can enjoy the game you love and make friends.
+                                </div>
+
+                                <div style={{paddingTop: "50px"}}>
+                                </div>
+                            </div>
                         </Scene>
                     </Controller>
                 </SectionWipesStyled>
@@ -48,9 +53,20 @@ const SectionWipesStyled = styled.div`
     display: block;
     overflow: visible;
     top: 50%;
-    font-size: 80px;
+    font-size: 20px;
   }
   
+  .panel div { 
+    position: relative;
+    display: block;
+    overflow: visible;
+    top: 20%;
+    left: 35%;
+    font-size: 20px;
+    color: white;
+    width: 600px;
+  }
+
   .panel.wallpapertheme { 
     background-image: url(${imgtheme});
   }
@@ -70,5 +86,25 @@ const SectionWipesStyled = styled.div`
   
   .panel.bordeaux {
     background-color: #953543;
+  }
+`;
+
+const SplitTextStyled = styled.div`
+  overflow: hidden;
+  text-align: center;
+  
+  .section {
+    height: 100vh;
+  }
+  .textContainer {
+    position: relative;
+    display: inline-block;
+    transform-origin: center;
+  }
+  .text, .text2 {
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+    display: inline-block;
   }
 `;
