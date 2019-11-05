@@ -14,13 +14,14 @@ import  Login  from './components/login';
 import  MyGroups  from './components/mygroups';
 import  NewGroup  from './components/newgroup';
 import  Registration  from './components/registration';
-
+import  Profile  from './components/profile';
 import * as serviceWorker from './serviceWorker';
 
 //configure routing
 const routing = (
     <Router>
             <Route path="/" component={App} />
+            <Route path="/profile" component={Profile} />
             <Route path="/discover" component={Discover} />
             <Route path="/groups" component={Groups} />
             <Route path="/homepage" component={Homepage} />
