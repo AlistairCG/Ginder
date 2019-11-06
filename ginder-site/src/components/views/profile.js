@@ -73,6 +73,8 @@ function Profile(props) {
               </Card.Body>
               <Card.Footer>
                 <Button variant="outline-secondary" href="/profile">Edit Profile</Button>
+                &nbsp; &nbsp;
+                <Button variant="outline-primary" href="/profile">My Groups</Button>
               </Card.Footer>
             </Card>
           </Col>
