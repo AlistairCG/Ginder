@@ -8,7 +8,9 @@ import {
   Carousel,
   Form,
   Button,
-  Card
+  Card,
+  Tab,
+  Tabs
 } from "react-bootstrap";
 
 import lastOfUs from "../../images/LastOfUs.jpg";
@@ -24,6 +26,11 @@ const carouselStyle = {
   height: "200px",
   background: "transparent"
 };
+
+const tabStyle = {
+  backgroundColor: "#e6e6e6",
+  
+}
 
 class Home extends React.Component {
   render() {
@@ -54,7 +61,7 @@ class Home extends React.Component {
                     alt="Dark Suls"
                   />
                 </Carousel.Item>
-                
+
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
@@ -70,18 +77,11 @@ class Home extends React.Component {
             </Col>
 
             <Col sm="4">
-              <Row>
-                <Col>
-                  <br></br>
+              <br></br> <br></br>
+              <Tabs defaultActiveKey="Login" id="home-tab" style={tabStyle}>
+                <Tab eventKey="Login" title="Login">
                   <Card bg="light">
-                  <Card.Header>
-                        Log In
-                      </Card.Header>
                     <Card.Body>
-                      <Card.Title>
-                        Log in for the fun to begin.
-                      </Card.Title>
-                      <hr></hr>
                       <Form>
                         <Form.Group controlId="formUsername">
                           <Form.Label>Username</Form.Label>
@@ -115,58 +115,59 @@ class Home extends React.Component {
                       </Form>
                     </Card.Body>
                   </Card>
-                </Col>
-              </Row>
-              <br></br>
-              <Row>
-                <Col>
-                <Card bg="light">
-                  <Card.Header>Sign Up</Card.Header>
-                  <Card.Body>
-                    <Card.Title>No Account? Make one!</Card.Title>
-                    <hr></hr>
-                    <Form>
-                      <Form.Row>
-                        <Form.Group as={Col} controlId="formFirstName">
-                          <Form.Label>First Name</Form.Label>
-                          <Form.Control type="text" placeholder="First Name" />
+                </Tab>
+
+                <Tab eventKey="Signup" title="Signup">
+                  <Card bg="light">
+                    <Card.Body>
+                      <Form>
+                        <Form.Row>
+                          <Form.Group as={Col} controlId="formFirstName">
+                            <Form.Label>First Name</Form.Label>
+                            <Form.Control
+                              type="text"
+                              placeholder="First Name"
+                            />
+                          </Form.Group>
+
+                          <Form.Group as={Col} controlId="formLastName">
+                            <Form.Label>Last Name</Form.Label>
+                            <Form.Control type="text" placeholder="Last Name" />
+                          </Form.Group>
+                        </Form.Row>
+
+                        <Form.Group controlId="formEmailAddress">
+                          <Form.Label>Email Address</Form.Label>
+                          <Form.Control placeholder="Email Address" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formLastName">
-                          <Form.Label>Last Name</Form.Label>
-                          <Form.Control type="text" placeholder="Last Name" />
+                        <Form.Group controlId="formPassword">
+                          <Form.Label>Password</Form.Label>
+                          <Form.Control
+                            type="password"
+                            placeholder="Password"
+                          />
                         </Form.Group>
-                      </Form.Row>
 
-                      <Form.Group controlId="formEmailAddress">
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control placeholder="Email Address" />
-                      </Form.Group>
+                        <Form.Group id="formGridCheckbox">
+                          <Form.Check
+                            type="checkbox"
+                            label="I confirm that I am over the age of 13"
+                          />
+                        </Form.Group>
 
-                      <Form.Group controlId="formPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                      </Form.Group>
-
-                      <Form.Group id="formGridCheckbox">
-                        <Form.Check
-                          type="checkbox"
-                          label="I confirm that I am over the age of 13"
-                        />
-                      </Form.Group>
-
-                      <Button
-                        variant="outline-primary"
-                        type="submit"
-                        text="white"
-                      >
-                        Sign me up!
-                      </Button>
-                    </Form>
-                  </Card.Body>
-                </Card>
-                </Col>
-              </Row>
+                        <Button
+                          variant="outline-primary"
+                          type="submit"
+                          text="white"
+                        >
+                          Sign me up!
+                        </Button>
+                      </Form>
+                    </Card.Body>
+                  </Card>
+                </Tab>
+              </Tabs>
             </Col>
           </Row>
         </Container>
