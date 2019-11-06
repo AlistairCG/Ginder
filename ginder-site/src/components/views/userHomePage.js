@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardDeck, Button } from "react-bootstrap";
+import { Card, CardDeck, Button, Image } from "react-bootstrap";
 import Header from "../utils/header";
 import profilePic from "../../images/profile.png"
 
@@ -8,6 +8,13 @@ const cardDeckStyle = {
   margin: '2%'
 }
 
+const imageStyle = {
+  display: "block",
+  marginLeft: "auto",
+  marginRight: "auto",
+  width: "100%"
+};
+
 class UserHomePage extends React.Component {
   render() {
     return (
@@ -15,7 +22,7 @@ class UserHomePage extends React.Component {
         <Header isGuest="false" />
         <CardDeck style={cardDeckStyle}>
           <Card border="primary" className="h-100">
-            <Card.Img variant="top" src={profilePic} height="250"/>
+            <Image src={profilePic} style={imageStyle} height="200" rounded/>
             <Card.Body>
               <Card.Title>Profile</Card.Title>
               <Card.Text>
@@ -55,9 +62,7 @@ class UserHomePage extends React.Component {
               <small className="text-muted">Last updated 3 mins ago</small>
             </Card.Footer>
           </Card>
-        </CardDeck>
 
-        <CardDeck style={cardDeckStyle}>
           <Card className="h-100" border="info">
             <Card.Img variant="top" src="holder.js/10x10" width="250" height="250"/>
             <Card.Body>
