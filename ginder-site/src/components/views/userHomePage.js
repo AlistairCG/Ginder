@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardDeck, Button } from "react-bootstrap";
 import Header from "../utils/header";
+import profilePic from "../../images/profile.png"
 
 //Style for Card columns
 const cardDeckStyle = {
@@ -14,13 +15,13 @@ class UserHomePage extends React.Component {
         <Header isGuest="false" />
         <CardDeck style={cardDeckStyle}>
           <Card border="primary" className="h-100">
-            <Card.Img variant="top" src="holder.js/10x10" width="250" height="250"/>
+            <Card.Img variant="top" src={profilePic} height="250"/>
             <Card.Body>
               <Card.Title>Profile</Card.Title>
               <Card.Text>
                 Check your profile.
               </Card.Text>
-              <Button variant="outline-primary">See Profile</Button>
+              <Button variant="outline-primary" href="/profile">See Profile</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>

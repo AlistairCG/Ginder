@@ -27,7 +27,7 @@ function Header(props) {
   } else {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand style={GinderStyle} href="/">
+        <Navbar.Brand style={GinderStyle} href="/homepage">
           Ginder
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
