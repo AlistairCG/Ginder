@@ -1,19 +1,27 @@
 import React from "react";
-import { Navbar, NavDropdown, Nav } from "react-bootstrap";
+import { Navbar, NavDropdown, Nav, FormControl, Form, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom'
+import logo from '../../assets/logo.png'
 
 class Header extends React.Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">Ginder</Navbar.Brand>
+      <>
+      <Navbar style={{ backgroundColor: '#07374b' }} variant="dark" expand="lg">
+        <Navbar.Brand><img width="200" src={logo}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-end" style={{ width: "100%" }}>
-            <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link href="/groups">Sign out</Nav.Link>
+          <Nav style={{ fontSize: 'x-large' }} className="ml-auto">
+            <Nav.Link><Link to="/discover">Discover</Link></Nav.Link>
+            <Nav.Link>My Groups</Nav.Link>
+            <Nav.Link><Link to="/profile">Profile</Link></Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+
+     
+      </>
     );
   }
 }

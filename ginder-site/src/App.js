@@ -13,6 +13,7 @@ import Login  from './components/views/login';
 import MyGroups  from './components/views/myGroups';
 import NewGroup  from './components/views/newGroups';
 import Registration  from './components/views/registration';
+import Profile from './components/views/profile';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/myGroups" component={MyGroups} />
             <Route path="/newGroup" component={NewGroup} />
             <Route path="/registration" component={Registration} />
+            <Route path="/profile" component={Profile} />
     </Router>
   );
 }

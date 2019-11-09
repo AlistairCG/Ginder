@@ -1,34 +1,23 @@
 import React from 'react'
-import { Button, Navbar, Nav, NavDropdown, FormControl, Form, Container, Row, Col, Card, Pagination } from 'react-bootstrap'
-import logo from '../../assets/logo.png'
+import { Button, Container, Row, Col, Card, Pagination, Navbar, NavDropdown, Nav, FormControl, Form  } from 'react-bootstrap'
+import Header from '../headers/header';
 
 class Discover extends React.Component {
     render() {
         return <div>
-            <Navbar style={{ backgroundColor: '#07374b' }} variant="dark" expand="lg">
-                <Navbar.Brand><img width="200" src={logo}></img></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav style={{ fontSize: 'x-large' }} className="ml-auto">
-                        <Nav.Link >Discover</Nav.Link>
-                        <Nav.Link >My Groups</Nav.Link>
-                        <Nav.Link >Profile</Nav.Link>
-
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <Header />
 
             <Navbar className="justify-content-between">
-                <NavDropdown title="Filter" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Newest</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Most Popular</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Most Events</NavDropdown.Item>
-                </NavDropdown>
-                <Form inline>
-                    <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
-                    <Button type="submit">Submit</Button>
-                </Form>
-            </Navbar>
+        <NavDropdown title="Filter" id="collasible-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Newest</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Most Popular</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Most Events</NavDropdown.Item>
+        </NavDropdown>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
+          <Button type="submit">Submit</Button>
+        </Form>
+      </Navbar>
 
             <Container>
                 <Row>
@@ -36,12 +25,18 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -50,12 +45,18 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -64,28 +65,40 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
-
+                <br />
                 <Row>
                     <Col>
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -94,12 +107,18 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -108,27 +127,40 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
+                <br />
                 <Row>
                     <Col>
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -137,12 +169,18 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -151,12 +189,18 @@ class Discover extends React.Component {
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="https://i.ytimg.com/vi/uODKrZnGk7g/maxresdefault.jpg" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Jumanji!</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                    Join the Jumanji club to get connected with thousands of fellow Jumanji players across the globe.
     </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Row>
+                                    <Col>
+                                        <Button variant="secondary">Details</Button>
+                                    </Col>
+                                    <Col>
+                                        <Button variant="primary">Join Group</Button>
+                                    </Col>
+                                </Row>
                             </Card.Body>
                         </Card>
                     </Col>
