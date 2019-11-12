@@ -9,9 +9,9 @@ class Header extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-end" style={{ width: "100%" }}>
-            <Nav.Link href="/login">Home</Nav.Link>
-            <Nav.Link href="/registration">About us</Nav.Link>
-            <Nav.Link href="/login">Partners</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/registration">Registration</Nav.Link>
+            <Nav.Link href="/newGroups">Create new group</Nav.Link>
             <Nav.Link href="/groups">Careers</Nav.Link>
           </Nav>
         </Navbar.Collapse>
