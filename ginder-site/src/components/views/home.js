@@ -21,7 +21,7 @@ import halo from "../../images/halo.png";
 
 const carouselStyle = {
   position: "auto",
-  margin: "7%",
+  margin: -24,
   width: "auto",
   height: "200px",
   background: "transparent"
@@ -29,19 +29,19 @@ const carouselStyle = {
 
 const tabStyle = {
   backgroundColor: "#e6e6e6",
-  
+  margin: 0,
+  height: '100%'
 }
 
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        <Header isGuest="true" />
+      <div style={{height: '100vh', overflow: 'hidden'}}>
+       
         <br></br>
-        <Container>
-          <Row>
-            <Col sm="8">
-              <Carousel style={carouselStyle}>
+        <div style={{zIndex: 99999999, width: '100vw', height: '100vh', padding: 100, background: 'rgba(0,0,0,0.5)', position: 'absolute', top: 0}}></div>
+        <Container fluid>
+              <Carousel controls={false} indicators={false} interval={2000} style={carouselStyle}>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
@@ -74,9 +74,9 @@ class Home extends React.Component {
                   <img className="d-block w-100" src={halo} alt="Halo" />
                 </Carousel.Item>
               </Carousel>
-            </Col>
 
-            <Col sm="4">
+
+            <Col style={{margin: '0 auto', zIndex: 9999999999}} sm="4">
               <br></br> <br></br>
               <Tabs defaultActiveKey="Login" id="home-tab" style={tabStyle}>
                 <Tab eventKey="Login" title="Login">
@@ -169,7 +169,7 @@ class Home extends React.Component {
                 </Tab>
               </Tabs>
             </Col>
-          </Row>
+
         </Container>
         <br></br>
       </div>
