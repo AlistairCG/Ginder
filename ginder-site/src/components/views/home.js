@@ -26,7 +26,7 @@ class Home extends React.Component {
         <br></br>
         <div style={{zIndex: 99999999, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.5)', position: 'absolute', top: 0}}></div>
         <Container fluid>
-              <Carousel controls={false} indicators={false} interval={4000} className="custom-carousel">
+              <Carousel controls={false} indicators={false} interval={2000} className="custom-carousel">
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
