@@ -12,9 +12,9 @@ class Header extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav style={{ fontSize: 'x-large' }} className="ml-auto">
-            <Nav.Link><Link to="/discover">Discover</Link></Nav.Link>
-            <Nav.Link>My Groups</Nav.Link>
-            <Nav.Link><Link to="/profile">Profile</Link></Nav.Link>
+            <Nav.Link><Link style={{color: 'white'}} to="/discover">Discover</Link></Nav.Link>
+            <Nav.Link><Link style={{color: 'white'}} to="mygroups">My Groups</Link></Nav.Link>
+            <Nav.Link><Link style={{color: 'white'}} to="/profile">Profile</Link></Nav.Link>
 
           </Nav>
         </Navbar.Collapse>

@@ -23,7 +23,7 @@ function App() {
             <Route path="/groups" component={Groups} />
             <Route path="/homepage" component={Homepage} />
             <Route path="/login" component={Login} />
-            <Route path="/myGroups" component={MyGroups} />
+            <Route path="/mygroups" component={MyGroups} />
             <Route path="/newGroup" component={NewGroup} />
             <Route path="/registration" component={Registration} />
             <Route path="/profile" component={Profile} />
