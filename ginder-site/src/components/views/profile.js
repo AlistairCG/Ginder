@@ -74,7 +74,7 @@ function Profile(props) {
               <Card.Footer>
                 <Button variant="outline-secondary" href="/profile">Edit Profile</Button>
                 &nbsp; &nbsp;
-                <Button variant="outline-primary" href="/profile">My Groups</Button>
+                <Button variant="outline-primary" href="/groups">My Groups</Button>
               </Card.Footer>
             </Card>
           </Col>

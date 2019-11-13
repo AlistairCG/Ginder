@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardDeck, Button, Image } from "react-bootstrap";
 import Header from "../utils/header";
 import profilePic from "../../images/profile.png"
+import groupPic from "../../images/groups.png"
 
 //Style for Card columns
 const cardDeckStyle = {
@@ -26,7 +27,7 @@ class UserHomePage extends React.Component {
             <Card.Body>
               <Card.Title>Profile</Card.Title>
               <Card.Text>
-                Check your profile.
+                Check or manage your profile.
               </Card.Text>
               <Button variant="outline-primary" href="/profile">See Profile</Button>
             </Card.Body>
@@ -36,13 +37,13 @@ class UserHomePage extends React.Component {
           </Card>
 
           <Card border="warning" className="h-100">
-            <Card.Img variant="top" src="holder.js/10x10" width="250" height="250"/>
+            <Image src={groupPic} style={imageStyle} height="200" rounded/>
             <Card.Body>
-              <Card.Title>Discover</Card.Title>
+              <Card.Title>Groups</Card.Title>
               <Card.Text>
-                Find other gamers that share your interests.
+                Create, join or manage groups.
               </Card.Text>
-              <Button variant="outline-warning">Start Discovering</Button>
+              <Button variant="outline-warning" href="/groups">Start Discovering</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>

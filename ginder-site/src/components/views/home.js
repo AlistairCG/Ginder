@@ -39,9 +39,9 @@ class Home extends React.Component {
       <div style={{height: '100vh', overflow: 'hidden'}}>
        
         <br></br>
-        <div style={{zIndex: 99999999, width: '100vw', height: '100vh', padding: 100, background: 'rgba(0,0,0,0.5)', position: 'absolute', top: 0}}></div>
+        <div style={{zIndex: 99999999, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.5)', position: 'absolute', top: 0}}></div>
         <Container fluid>
-              <Carousel controls={false} indicators={false} interval={2000} style={carouselStyle}>
+              <Carousel controls={false} indicators={false} interval={4000} style={carouselStyle}>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
@@ -79,9 +79,14 @@ class Home extends React.Component {
             <Col style={{margin: '0 auto', zIndex: 9999999999}} sm="4">
               <br></br> <br></br>
               <Tabs defaultActiveKey="Login" id="home-tab" style={tabStyle}>
+                
                 <Tab eventKey="Login" title="Login">
                   <Card bg="light">
                     <Card.Body>
+                      <div style={{textAlign: 'center'}}>
+                      <h1>Ginder</h1>
+                      <sub>Where gamers meet</sub>
+                      </div>
                       <Form>
                         <Form.Group controlId="formUsername">
                           <Form.Label>Username</Form.Label>
@@ -120,6 +125,7 @@ class Home extends React.Component {
                 <Tab eventKey="Signup" title="Signup">
                   <Card bg="light">
                     <Card.Body>
+                    <h1 style={{textAlign: 'center'}}>Ginder</h1>
                       <Form>
                         <Form.Row>
                           <Form.Group as={Col} controlId="formFirstName">
