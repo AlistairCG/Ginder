@@ -15,6 +15,7 @@ import Chats from "./components/views/chats"
 import Questionnaire from "./components/views/questionnaire"
 import LinkAccounts from "./components/views/linkAccounts"
 import Settings from "./components/views/settings"
+import addGroup from "./components/views/addGroup"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/questionnaire" component={Questionnaire} />
       <Route path="/linkAccounts" component={LinkAccounts} />
       <Route path="/settings" component={Settings} />
+      <Route path="/addGroup" component={addGroup} />
     </Router>
   );
 }

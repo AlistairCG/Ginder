@@ -52,7 +52,7 @@ function Discover(props) {
 
           <Col sm="6">
           <div style={{textAlign:'center'}}>
-          <Button variant="success">Create Group</Button>
+          <Button variant="success" href="/addGroup">Create Group</Button>
           </div>
           <hr></hr>
           <h3 style={{ textAlign: "center" }}>Popular Groups</h3>

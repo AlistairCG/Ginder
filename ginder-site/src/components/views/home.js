@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../utils/header";
 
 import {
   Container,
@@ -12,20 +11,6 @@ import {
   Tab,
   Tabs
 } from "react-bootstrap";
-
-import lastOfUs from "../../images/LastOfUs.jpg";
-import doom from "../../images/Doom.jpg";
-import darkSouls from "../../images/darkSouls.jpg";
-import marioKart from "../../images/marioKart.jpg";
-import halo from "../../images/halo.png";
-
-const carouselStyle = {
-  position: "auto",
-  margin: -24,
-  width: "auto",
-  height: "200px",
-  background: "transparent"
-};
 
 const tabStyle = {
   backgroundColor: "#e6e6e6",
@@ -41,37 +26,53 @@ class Home extends React.Component {
         <br></br>
         <div style={{zIndex: 99999999, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.5)', position: 'absolute', top: 0}}></div>
         <Container fluid>
-              <Carousel controls={false} indicators={false} interval={4000} style={carouselStyle}>
+              <Carousel controls={false} indicators={false} interval={4000} className="custom-carousel">
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={lastOfUs}
+                    src="https://images8.alphacoders.com/532/thumb-1920-532407.jpg"
                     alt="Last of Us"
                   />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                  <img className="d-block w-100" src={doom} alt="Doom" />
+                  <img className="d-block w-100" src="https://images.everyeye.it/img-notizie/nba-2k20-demo-gratuita-pubblicata-21-agosto-ps4-xbox-one-switch-v4-390542.jpg" alt="NBA 2K20" />
                 </Carousel.Item>
 
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={darkSouls}
-                    alt="Dark Suls"
+                    src="https://steamcdn-a.akamaihd.net/steam/apps/442010/ss_27397db724cfd5648655c1056ff5d184147a4c50.1920x1080.jpg?t=1472055435"
+                    alt="Dark Souls"
+                  />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img className="d-block w-100" src="https://i.pinimg.com/originals/8d/bc/e3/8dbce31c799d1093017741ce70e04a05.jpg" alt="FIFA 19" />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="https://wallpapercave.com/wp/wp3538012.jpg"
+                    alt="Super Smash Bros Brawl"
                   />
                 </Carousel.Item>
 
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={marioKart}
-                    alt="Mario Kart"
+                    src="https://assets1.ignimgs.com/2017/07/17/old-school-runescape-mobile-21-1500316802736.jpg"
+                    alt="Super Smash Bros Brawl"
                   />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                  <img className="d-block w-100" src={halo} alt="Halo" />
+                  <img className="d-block w-100" src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcqEduvPwqDOjSHxH2q4jCQ3v8blQ_tdV3l5AT8_pKd25GdsTcYN5TRZyRQ_9XuatKxdHvJD3CUlkpuUtvIIZnSrb8ZWwpH4G2SVAMGQ96KPPGfDWSFw7f4N8IKuHufahmmA6tzta85yeRoxOhmCo_nFCNvTRWk_euIpkNEPdNxsI-&h=1080&w=1920&format=jpg" alt="Halo" />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img className="d-block w-100" src="https://stmed.net/sites/default/files/call-of-duty%3A-modern-warfare-remastered-hd-wallpapers-32862-3539296.jpg" alt="Call of Duty" />
                 </Carousel.Item>
               </Carousel>
 
@@ -85,8 +86,9 @@ class Home extends React.Component {
                     <Card.Body>
                       <div style={{textAlign: 'center'}}>
                       <h1>Ginder</h1>
-                      <sub>Where gamers meet</sub>
+                      <sub>where gamers meet.</sub>
                       </div>
+                      <hr></hr>
                       <Form>
                         <Form.Group controlId="formUsername">
                           <Form.Label>Username</Form.Label>
@@ -125,7 +127,11 @@ class Home extends React.Component {
                 <Tab eventKey="Signup" title="Signup">
                   <Card bg="light">
                     <Card.Body>
-                    <h1 style={{textAlign: 'center'}}>Ginder</h1>
+                    <div style={{textAlign: 'center'}}>
+                      <h1>Ginder</h1>
+                      <sub>where gamers meet.</sub>
+                    </div>
+                    <hr></hr>
                       <Form>
                         <Form.Row>
                           <Form.Group as={Col} controlId="formFirstName">
