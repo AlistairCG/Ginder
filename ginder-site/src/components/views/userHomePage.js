@@ -6,6 +6,8 @@ import groupPic from "../../images/groups.png"
 import chatsPic from "../../images/chats.png"
 import questionnairePic from "../../images/questionnaire.png"
 import searchPic from "../../images/search.png"
+import settingsPic from "../../images/settings.png"
+
 
 //Style for Card columns
 const cardDeckStyle = {
@@ -96,7 +98,7 @@ class UserHomePage extends React.Component {
           </Card>
         
           <Card className="h-100">
-            <Card.Img variant="top" src="holder.js/10x10" width="250" height="250"/>
+          <Image src={settingsPic} style={imageStyle} height="200" rounded/>
             <Card.Body>
               <Card.Title>Settings</Card.Title>
               <Card.Text>
