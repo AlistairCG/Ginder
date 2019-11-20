@@ -4,6 +4,8 @@ import Header from "../utils/header";
 import profilePic from "../../images/profile.png"
 import groupPic from "../../images/groups.png"
 import chatsPic from "../../images/chats.png"
+import questionnairePic from "../../images/questionnaire.png"
+import searchPic from "../../images/search.png"
 
 //Style for Card columns
 const cardDeckStyle = {
@@ -66,7 +68,7 @@ class UserHomePage extends React.Component {
           </Card>
 
           <Card className="h-100" border="info">
-            <Card.Img variant="top" src="holder.js/10x10" width="250" height="250"/>
+          <Image src={questionnairePic} style={imageStyle} height="200" rounded/>
             <Card.Body>
               <Card.Title>Questionnaire</Card.Title>
               <Card.Text>
@@ -80,13 +82,13 @@ class UserHomePage extends React.Component {
           </Card>
 
           <Card border="light"className="h-100">
-            <Card.Img variant="top" src="holder.js/10x10" width="250" height="250" />
+          <Image src={searchPic} style={imageStyle} height="200" rounded/>
             <Card.Body>
-              <Card.Title>Link Accounts</Card.Title>
+              <Card.Title>Search</Card.Title>
               <Card.Text>
-                Link to your other accounts (like Steam, etc.)
+                Looking for something?
               </Card.Text>
-              <Button variant="outline-dark">Link Accounts</Button>
+              <Button variant="outline-dark">Search</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
