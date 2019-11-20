@@ -2,15 +2,17 @@ import React from "react";
 
 import {
   Container,
-  Row,
   Col,
   Carousel,
   Form,
   Button,
   Card,
   Tab,
-  Tabs
+  Tabs,
+  Image
 } from "react-bootstrap";
+
+import logo from "../../images/logo.png"
 
 const tabStyle = {
   backgroundColor: "#e6e6e6",
@@ -85,8 +87,7 @@ class Home extends React.Component {
                   <Card bg="light">
                     <Card.Body>
                       <div style={{textAlign: 'center'}}>
-                      <h1>Ginder</h1>
-                      <sub>where gamers meet.</sub>
+                      <Image src={logo} thumbnail></Image>
                       </div>
                       <hr></hr>
                       <Form>
@@ -128,8 +129,7 @@ class Home extends React.Component {
                   <Card bg="light">
                     <Card.Body>
                     <div style={{textAlign: 'center'}}>
-                      <h1>Ginder</h1>
-                      <sub>where gamers meet.</sub>
+                    <Image src={logo} thumbnail></Image>
                     </div>
                     <hr></hr>
                       <Form>

@@ -3,6 +3,7 @@ import { Card, CardDeck, Button, Image } from "react-bootstrap";
 import Header from "../utils/header";
 import profilePic from "../../images/profile.png"
 import groupPic from "../../images/groups.png"
+import chatsPic from "../../images/chats.png"
 
 //Style for Card columns
 const cardDeckStyle = {
@@ -51,7 +52,7 @@ class UserHomePage extends React.Component {
           </Card>
 
           <Card className="h-100" border="success">
-            <Card.Img variant="top" src="holder.js/10x10" width="250" height="250" />
+          <Image src={chatsPic} style={imageStyle} height="200" rounded/>
             <Card.Body>
               <Card.Title>Chats</Card.Title>
               <Card.Text>
@@ -69,7 +70,7 @@ class UserHomePage extends React.Component {
             <Card.Body>
               <Card.Title>Questionnaire</Card.Title>
               <Card.Text>
-                Answer some questions for accurate pairing with other users.
+                Answer questions for accurate pairing.
               </Card.Text>
               <Button variant="outline-info">Fill Questionnaire</Button>
             </Card.Body>
