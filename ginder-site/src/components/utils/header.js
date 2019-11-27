@@ -14,9 +14,10 @@ const GinderStyle = {
   fontFamily: "'Montserrat', sans-serif"
 };
 
-const LoginStyle = {
-  paddingRight: "3%"
+const rightNavButton = {
+  paddingRight: "1%"
 };
+
 
 function Header(props) {
   if (props.isGuest === "true") {
@@ -36,7 +37,20 @@ function Header(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
-          <Nav className="text-center" style={LoginStyle}>
+
+          <Nav className="text-center" style={{paddingRight: "1%"}}>
+            <Button variant="outline-dark" href="/profile">
+              Profile
+            </Button>
+          </Nav>
+
+          <Nav className="text-center" style={{paddingRight: "1%"}}>
+            <Button variant="outline-dark" href="/groups">
+              Groups
+            </Button>
+          </Nav>
+
+          <Nav className="text-center" style={rightNavButton}>
             <Button variant="danger" href="/">
               Log Out
             </Button>

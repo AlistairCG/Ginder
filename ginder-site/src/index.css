@@ -32,6 +32,11 @@ code {
   .custom-carousel {
     height: 200px;
   }
+
+  .h-100{
+    margin: auto;
+    width: 75%;
+  }
 }
 
 

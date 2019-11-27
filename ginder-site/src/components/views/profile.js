@@ -14,7 +14,8 @@ import {
 import profilePic from "../../images/profile.png";
 
 const cardStyle = {
-  width: "100%",
+  width: "90%",
+  margin: "auto",
   textAlign: "center"
 };
 
@@ -35,6 +36,8 @@ function Profile(props) {
           <Col sm="4"></Col>
           <Col sm="6">
             <Card border="secondary" style={cardStyle}>
+            <Card.Body>
+            <Card.Title>John Doe</Card.Title>
               <Image
                 src={profilePic}
                 height="200"
@@ -42,15 +45,14 @@ function Profile(props) {
                 style={imageStyle}
                 roundedCircle
               />
-              <Card.Body>
-              <Button variant="outline-dark" href="/profile">
+              <br></br>
+              <Button variant="outline-success" href="/profile">
                   Change Profile Picture
                 </Button>
                 <br></br> <br></br>
-                <Card.Title>John Doe</Card.Title>
                 <Card.Text>
                   <Table>
-                    <tbody>
+                    <tbody style={{textAlign: "left"}}>
                       <tr>
                         <td>Member since</td>
                         <td>Oct 21, 2019</td>
@@ -65,7 +67,7 @@ function Profile(props) {
                       </tr>
                       <tr>
                         <td>Favourite Games</td>
-                        <td>Call of Duty: Modern Warfare, Fallout 4, Kingdom Hearts</td>
+                        <td>Kingdom Hearts, Fallout 4</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -74,7 +76,9 @@ function Profile(props) {
               <Card.Footer>
                 <Button variant="outline-secondary" href="/profile">Edit Profile</Button>
                 &nbsp; &nbsp;
-                <Button variant="outline-primary" href="/groups">My Groups</Button>
+                <Button variant="outline-warning" href="/groups">My Groups</Button>
+                &nbsp; &nbsp;
+                <Button variant="outline-primary" href="/profile">My Chats</Button>
               </Card.Footer>
             </Card>
           </Col>

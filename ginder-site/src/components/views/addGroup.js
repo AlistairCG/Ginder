@@ -11,7 +11,6 @@ function addGroup(props) {
       <Row>
         <Col sm="4"></Col>
         <Col sm="4">
-          <br></br>
           <Card bg="light">
             <Card.Body>
               <div style={{ textAlign: "center" }}>
