@@ -1,92 +1,79 @@
-import React from "react";
-import Header from "../utils/header";
+import React from 'react'
+import { Button, ListGroup, Container, Row, Col, Image, Card } from 'react-bootstrap'
+import Header from '../utils/header';
 
-import {
-  Card,
-  Button,
-  Container,
-  Row,
-  Image,
-  Col,
-  Table
-} from "react-bootstrap";
+class Profile extends React.Component {
+    render() {
+        return <div>
+            <Header />
+            <Container>
+                <Row>
+                    <Col xs lg="3">
+                        <Row>
+                            <Image style={{ width: '80%', margin: 25 }} src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.HvOnhCFw3xBzmeWyI5am1AHaHa%26pid%3DApi&f=1" roundedCircle />
+                            <h1 style={{ margin: '0 auto' }}>Cameron</h1>
+                        </Row>
+                        <Row>
+                            <a style={{ margin: '0 auto' }} href="#">Edit Profile</a>
+                        </Row>
+                        <Row>
+                            <h2 style={{ fontWeight: 'bold', margin: '10 25' }}>BIO</h2>
+                        </Row>
+                        <Row>
+                            <p style={{ margin: '10 25' }}>Video games have always been a part of my life. The first console I ever had was given to me by my grandmother. A translucent purple Gameboy Color packaged with Pokemon Gold. 10 years later, on my 18th birthday, I bought my final handheld console (for now) game, Pokemon Heart Gold for DS. Within that time I have enjoyed a plethora of console, pc and online games.</p>
+                        </Row>
+                    </Col>
+                    <Col xs lg="1">
 
-import profilePic from "../../images/profile.png";
+                    </Col>
+                    <Col md="8">
+                        <Row style={{ marginTop: 25 }}>
+                            <Card border="primary" style={{ width: '100%' }}>
+                                <Card.Header>Games</Card.Header>
+                                <Card.Body>
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Body>
+                            </Card>
+                        </Row>
 
-const cardStyle = {
-  width: "90%",
-  margin: "auto",
-  textAlign: "center"
-};
+                        <Row style={{ marginTop: 25 }}>
+                            <Card border="success" style={{ width: '100%' }}>
+                                <Card.Header>Groups</Card.Header>
+                                <Card.Body>
+                                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                                </Card.Body>
+                            </Card>
+                        </Row>
 
-const imageStyle = {
-  display: "block",
-  marginLeft: "auto",
-  marginRight: "auto",
-  marginTop: "2%",
-  width: "50%"
-};
+                        <Row style={{ marginTop: 25 }}>
+                            <Card border="danger" style={{ width: '100%' }}>
+                                <Card.Header>Events</Card.Header>
+                                <Card.Body>
+                                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                                </Card.Body>
+                            </Card>
+                        </Row>
 
-function Profile(props) {
-  return (
-    <div>
-      <Header isGuest="false" href="/userHomepage" />
-      <Container style={{ margin: "2%" }}>
-        <Row>
-          <Col sm="4"></Col>
-          <Col sm="6">
-            <Card border="secondary" style={cardStyle}>
-            <Card.Body>
-            <Card.Title>John Doe</Card.Title>
-              <Image
-                src={profilePic}
-                height="200"
-                width="200"
-                style={imageStyle}
-                roundedCircle
-              />
-              <br></br>
-              <Button variant="outline-success" href="/profile">
-                  Change Profile Picture
-                </Button>
-                <br></br> <br></br>
-                <Card.Text>
-                  <Table>
-                    <tbody style={{textAlign: "left"}}>
-                      <tr>
-                        <td>Member since</td>
-                        <td>Oct 21, 2019</td>
-                      </tr>
-                      <tr>
-                        <td>Group sessions joined</td>
-                        <td>972</td>
-                      </tr>
-                      <tr>
-                        <td>Favourite Genres</td>
-                        <td>FPS, Adventure RPG</td>
-                      </tr>
-                      <tr>
-                        <td>Favourite Games</td>
-                        <td>Kingdom Hearts, Fallout 4</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <Button variant="outline-secondary" href="/profile">Edit Profile</Button>
-                &nbsp; &nbsp;
-                <Button variant="outline-warning" href="/groups">My Groups</Button>
-                &nbsp; &nbsp;
-                <Button variant="outline-primary" href="/profile">My Chats</Button>
-              </Card.Footer>
-            </Card>
-          </Col>
-          <Col sm="4"></Col>
-        </Row>
-      </Container>
-    </div>
-  );
+
+
+
+
+                    </Col>
+                </Row>
+            </Container>
+
+        </div >
+    }
 }
 
-export default Profile;
+export default Profile

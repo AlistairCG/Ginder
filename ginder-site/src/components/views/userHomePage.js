@@ -62,7 +62,7 @@ class UserHomePage extends React.Component {
               <Card.Text>
                 Start and/or read your conversations
               </Card.Text>
-              <Button variant="outline-success">Check Messages</Button>
+              <Button variant="outline-success" href="/chats">Check Messages</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
