@@ -104,7 +104,7 @@ class UserHomePage extends React.Component {
               <Card.Text>
                 Customize your experience.
               </Card.Text>
-              <Button variant="outline-dark">Settings</Button>
+              <Button href="/settings" variant="outline-dark">Settings</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
