@@ -50,6 +50,12 @@ function Header(props) {
             </Button>
           </Nav>
 
+          <Nav className="text-center" style={{paddingRight: "1%"}}>
+            <Button variant="outline-dark" href="/search">
+              Search
+            </Button>
+          </Nav>
+
           <Nav className="text-center" style={rightNavButton}>
             <Button variant="danger" href="/">
               Log Out

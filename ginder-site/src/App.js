@@ -16,6 +16,7 @@ import Questionnaire from "./components/views/questionnaire"
 import LinkAccounts from "./components/views/linkAccounts"
 import Settings from "./components/views/settings"
 import addGroup from "./components/views/addGroup"
+import Search from "./components/views/search"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path="/linkAccounts" component={LinkAccounts} />
       <Route path="/settings" component={Settings} />
       <Route path="/addGroup" component={addGroup} />
+      <Route path="/search" component={Search} />
     </Router>
   );
 }

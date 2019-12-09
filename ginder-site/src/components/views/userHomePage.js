@@ -76,7 +76,7 @@ class UserHomePage extends React.Component {
               <Card.Text>
                 Answer questions for accurate pairing.
               </Card.Text>
-              <Button variant="outline-info">Fill Questionnaire</Button>
+              <Button variant="outline-info" href="/questionnaire">Fill Questionnaire</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
@@ -90,7 +90,7 @@ class UserHomePage extends React.Component {
               <Card.Text>
                 Looking for something?
               </Card.Text>
-              <Button variant="outline-dark">Search</Button>
+              <Button href="/search" variant="outline-dark">Search</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
